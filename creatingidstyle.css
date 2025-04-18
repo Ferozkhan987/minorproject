@@ -1,0 +1,119 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+    animation: animateB 5s linear infinite;
+}
+@keyframes animateBg {
+    100% {
+        filter: hue-rotate(360deg);
+    }
+    
+}
+.heading {
+    text-align: center;
+    margin: 2em 0em 0em;
+    background: transparent;
+    font-size: 2em;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    border: none;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+    font-style: var(#be4b4b);
+}
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    height: 100vh;
+    border-radius: 20px;
+}
+
+.one{
+    background: linear-gradient( #e175cf,#0ac5f8);
+}
+
+.creating-box{
+    border: 2px solid;
+    height: 550px;
+    padding: 0;
+    width: 450px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    
+    
+}
+.email-bo{
+    padding: 0.5em;
+    position: relative;
+    background: transparent;
+    width: 410px;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    margin: 1.5em 0.5em 0.2em;
+    color:white;
+    
+}
+.email-bo label{
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: #fff; 
+    pointer-events: none;
+    transition: .5s;
+    background: transparent;
+}
+.email-bo input:focus~label{
+    top: -5px;
+}
+.email-bo input:invalid~label{
+    top: -5px;
+}
+.email-bo input{
+    width: 100%;
+    background: transparent;
+    height: 50px;
+    border-radius: 40px;
+    outline: none;
+    font-size: 1em ;
+    color: #fff;
+    padding: 0 35px 0 5px;
+    border: none;
+}
+
+.creating-box button
+{
+    background: transparent;
+    width: 305px;
+    height: 50px;
+    border: 2px solid #272323;
+    outline: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 1em;
+    color: #fff;
+    font-weight: 500;
+    text-align: center;
+    margin: 2em 5em 2em;
+}
+@media (max-widht: 360px) {
+    .login{
+        width: 100%;
+        height: 100vh;
+        border: none;
+        border-radius: 0;
+    }
+    .email-bo{
+        width: 290px;
+    }
+}
+
