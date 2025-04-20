@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+    animation: animateBg 5s linear infinite;
+    /* background: linear-gradient(45deg,#d88383,#120c0c); */
+    
+}
+@keyframes animateBg {
+    100% {
+        filter: hue-rotate(30deg);
+    }
+    
+}
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    height: 100vh;
+    border-radius: 20px;
+}
+
+
+
+.login{
+    border-radius: 20px;
+    background: transparent;
+    position: relative;
+    height: 450px;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    background-size: contain;
+    background-position: center; 
+    border: 2px solid rgba(44, 204, 216, 0.5);
+}
+
+.login-text {
+    text-align: center;
+    background: transparent;
+    font-size: 2em;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(18, 4, 4);
+}
+
+
+
+.email-bo{
+    position: relative;
+    background: transparent;
+    width: 310px;
+    border-bottom: 2px solid #e6d8d8;
+    background: transparent;
+    margin: 30px 0;
+    
+}
+.email-bo label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: #410808; 
+    pointer-events: none;
+    transition: .5s;
+    background: transparent;
+}
+.email-bo input:focus~label{
+    top: -5px;
+}
+.email-bo input:invalid~label{
+    top: -5px;
+}
+.email-bo input{
+    width: 100%;
+    background: transparent;
+    height: 50px;
+    border-radius: 40px;
+    outline: none;
+    font-size: 1em ;
+    color: #b02626;
+    padding: 0 35px 0 5px;
+    border: none;
+}
+.email-bo .icon{
+    position: absolute;
+    background: transparent;
+    right: 8px;
+    color: #792323;
+    font-size: 1.2em;
+    line-height: 57px;
+}
+ .checkbox{
+    width: 300px;
+    background: transparent;
+    margin: -15px 0 15px;
+    color: #170707;
+    display: flex;
+    font-size: .9em;
+    justify-content: space-around;
+
+}
+.checkbox label input {
+    margin-right: 3px;
+    float: left;
+}
+.checkbox a {
+    color: #0f0707;
+    text-decoration: none;
+}
+.checkbox a:hover {
+    text-decoration: underline;
+}
+
+.login-box  a:link, a:visited{
+    background: transparent;
+    width: 500px;
+    height: 50px;
+    border: 3px solid #8a8686;
+    outline: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 1em;
+    color: #0b0202;
+    font-weight: 500;
+    padding: 10px 120px 10px 120px;
+    text-align: center;
+}
+.Register-box{
+    font-size: .9em;
+    color: #140808;
+    background: transparent;
+    text-align: center;
+    margin: 25px 2 10px; 
+}
+.Register-box p a {
+    color: #130707;
+    text-decoration: none;
+    background: transparent;
+    font-weight: 600;
+} 
+.Register-box p a:hover{
+    text-decoration: underline;
+    background: transparent;
+}
+
+@media (max-widht: 360px) {
+    .login{
+        width: 100%;
+        height: 100vh;
+        border: none;
+        border-radius: 0;
+    }
+    .email-bo{
+        width: 290px;
+    }
+}
