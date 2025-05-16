@@ -148,7 +148,7 @@ section{
     background: transparent;
 }
 
-@media (max-widht: 360px) {
+@media (max-widht: 361px) {
     .login{
         width: 100%;
         height: 100vh;
