@@ -146,13 +146,13 @@ section{
 .Register-box p a:hover{
     text-decoration: underline;
     background: transparent;
-    
+
 }
 
 @media (max-widht: 361px) {
     .login{
         width: 100%;
-        height: 100vh;
+        height: 99.99vh;
         border: none;
         border-radius: 0;
     }
