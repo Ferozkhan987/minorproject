@@ -146,6 +146,7 @@ section{
 .Register-box p a:hover{
     text-decoration: underline;
     background: transparent;
+    
 }
 
 @media (max-widht: 361px) {
