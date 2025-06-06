@@ -136,8 +136,6 @@
             document.querySelectorAll('.error').forEach(function(errorDiv) {
                 errorDiv.textContent = '';
             });
-
-            // Validate Age
             const age = document.getElementById('age').value;
             if (age === '' || age < 1) {
                 isValid = false;
